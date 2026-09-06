@@ -1,0 +1,22 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+
+# Uploads
+uploads/items/
+!uploads/items/.gitkeep
+
+# OS
+Thumbs.db
+.DS_Store
+
+# PHP
+*.log
+.php_cs.cache

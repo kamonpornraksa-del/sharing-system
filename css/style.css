@@ -1,0 +1,162 @@
+/* ========================================================
+   css/style.css
+   สไตล์เสริมสำหรับ "ระบบแบ่งปันเสื้อผ้าและของใช้มือสอง"
+   (ใช้ร่วมกับ Bootstrap 5)
+   ======================================================== */
+
+:root {
+    --brand-color: #2e7d32;
+    --brand-color-dark: #1b5e20;
+    --brand-light: #e8f5e9;
+}
+
+body {
+    background-color: #f5f6f8;
+    font-family: "Sarabun", "Prompt", "Segoe UI", sans-serif;
+    color: #2b2b2b;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-brand {
+    font-weight: 700;
+}
+
+.bg-brand {
+    background-color: var(--brand-color) !important;
+}
+
+.btn-brand {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-color-dark);
+    border-color: var(--brand-color-dark);
+    color: #fff;
+}
+
+.text-brand {
+    color: var(--brand-color) !important;
+}
+
+/* ---------- Hero ---------- */
+.hero-section {
+    background: linear-gradient(135deg, var(--brand-color) 0%, var(--brand-color-dark) 100%);
+    color: #fff;
+    padding: 48px 0;
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 32px;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+}
+
+/* ---------- Item Cards ---------- */
+.item-card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    height: 100%;
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.item-card .item-img-wrap {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-card .item-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-card .card-body {
+    padding: 14px 16px;
+}
+
+.item-card .card-title {
+    font-weight: 600;
+    font-size: 1.02rem;
+    margin-bottom: 6px;
+}
+
+/* ---------- Detail page image ---------- */
+.detail-img-wrap {
+    width: 100%;
+    max-height: 420px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- Forms ---------- */
+.form-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.auth-wrap {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+    background-color: #212529;
+    color: #ccc;
+    padding: 24px 0;
+    margin-top: 60px;
+}
+
+footer.site-footer a {
+    color: #ccc;
+}
+
+/* ---------- Misc ---------- */
+.badge {
+    font-weight: 500;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #888;
+}
+
+.table-actions .btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.request-msg-box {
+    background: var(--brand-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+}
